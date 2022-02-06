@@ -4,66 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
     <title>Abdullahil Baki Adol</title>
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
-      <h2><a href="#me">Abdullahil Baki Adol</a></h2>
-      
-      <div>
-        <a href="#oj">OJ Profile</a>
-        <a href="#contest">Contest Participation</a>
-        <a href="#projects">Projects</a>
-        <a href="#cv">CV</a>
+      <div class="headerBody">
+        <div class="headerLeft">Adol</div>
+        <div class="headerRight">
+          <a href="#home">Home</a>
+          <a href="#aboutme">About</a>
+          <a href="#ojprofile">OJ Profile</a>
+          <a href="#contestparticipation">Contest Participation</a>
+          <a href="#projects">Projects</a>
+        </div>
       </div>
     </header>
     <main>
-      <div id="me">
-        <p>I am a competitive programmer. I enjoy solving problems because of satisfaction i get by solving challenges. I am proficient in Data structure and Algorithms. Solid Programming expertise in C/C++, JAVA, Python. </p>
-        <br>
-      </div>
-      <div id="oj">
-        <h1>OJ PROFILE</h1>
-        <div class="ojCardBody">
-          <div id="codeforcesOjCard" class="ojCard">
-            <p>Codeforces</p>
-            <p>
-              Handle: <a href="https://codeforces.com/profile/adol">adol</a>
-            </p>
-          </div>
-          <div class="ojCard">
-            <p >CodeChef</p>
-              <p> Handle :<a href="https://www.codechef.com/users/adol_3">adol_3</a></p>
-              <p>Max Rating : 1538</p>
-              <p>Current Rating : 1538</p>
+      <section id="home" class="home">
+        <p>Hi, my name is</p>
+        <h2>Abdullahil Baki Adol</h2>
+        <h3>Software Engineer</h3>
+        <p></p>
+      </section>
+
+
+      <section id="aboutme">
+        <h2 class="sectionHeader">ABOUT ME</h2>
+        <div class="sectonMidBorder"></div>
+        <br><br>
+        <div class="aboutmerow">
+          <div class="aboutmedetails">
+          I am Abdullahil Baki Adol, a competitive programmer. As a problem solver, I love to take challenges. I am proficient in Data Structure and Algorithms. I participated in many onsite contests like ICPC Dhaka Regional preliminary, Intra University. 
+            <div class="myskills">
+              <br>
+              <p>Here are few technologies i have skilled : </p>
+              <ul>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>React Js</li>
+                <li>Node Js</li>
+              </ul>
             </div>
-
-            <div class="ojCard">
-                <p >AtCoder</p>
-                <p>Handle : <b><a href="https://atcoder.jp/users/Aadol">Aadol</a></b></p>
-                <p>Max Rating : 313</p>
-                <p>Current Rating : 313</p>
-            </div>
-
-            <div id="uvaOjCard" class="ojCard">
-                <p >UVa</p>
-                <p>Handle : <a href="https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_authorstats&userid=924876">adol</a></p>
-            </div>
-
-            <div class="ojCard">
-                <p >HackerRank</p>
-                <p>Handle : <a href="https://www.hackerrank.com/bakiadol89">bakiadol89</a></p>
-                <p>Problem Solving: &#9733&#9733&#9733&#9733&#9733</p>
-                <p>Verified Skills: <a href="https://www.hackerrank.com/certificates/37c6350291a3">Problem Solving (Basic)</a> </p>
-                <p>Verified Skills: <a href="https://www.hackerrank.com/certificates/631e4ff3cb0f">Problem Solving (Intermediate)</a> </p>
-              </div>
-
+        </div>
+          <div class="aboutmeimage">
+            <img src="./files/me.jpg" alt="" />
           </div>
         </div>
-      </div>
-      <div id="contest">
-        <h1>CONTEST PARTICIPATION</h1>
+
+      </section>
+      
+      <br><br><br><br><br>
+      <section id="ojprofile">
+        <h2 class="sectionHeader">ONLINE JUDGE PROFILE</h2>
+        <div class="sectonMidBorder"></div>
+
+        <!-- codeforces -->
+        <div class="ojprofileCard" style="text-align: left;" id="codeforcesOjCard">
+          <h2>Codeforces</h2>
+          <p>
+            Handle :
+            <a href="https://codeforces.com/profile/adol">adol</a>
+          </p>
+        </div>
+        
+        <!-- hacker rank -->
+        <div class="ojprofileCard">
+          <h2>Hacker Rank</h2>
+          <p>
+            Handle :
+            <a href="https://www.hackerrank.com/bakiadol89">bakiadol89</a>
+          </p>
+          <p>Problem Solving: &#9733&#9733&#9733&#9733&#9733</p>
+          <p>Verified Skills: <a href="https://www.hackerrank.com/certificates/37c6350291a3">Problem Solving (Basic)</a> </p>
+                <p>Verified Skills: <a href="https://www.hackerrank.com/certificates/631e4ff3cb0f">Problem Solving (Intermediate)</a> </p>
+        </div>
+
+        <!-- code chef -->
+        <div class="ojprofileCard" style="text-align: left;">
+          <h2>Code Chef</h2>
+          <p>
+            Handle :
+            <a href="https://www.codechef.com/users/adol_3">adol_3</a>
+          </p>
+          <p>Max Rating : 1538</p>
+          <p>Current Rating : 1538</p>
+        </div>
+
+        <!-- atcoder -->
+        <div class="ojprofileCard">
+          <h2>AtCoder</h2>
+          <p>
+            Handle :
+            <a href="https://atcoder.jp/users/Aadol">Aadol</a>
+          </p>
+          <p>Max Rating : 313</p>
+          <p>Current Rating : 313</p>
+        </div>
+
+
+      </section>
+
+      <br><br><br><br><br>
+      <section id="contestparticipation">
+        <h2 class="sectionHeader">CONTEST PARTICIPTION</h2>
+        <div class="sectonMidBorder"></div>
         <table id="contestRank">
           <tr>
             <th>#</th>
@@ -71,12 +126,131 @@
             <th>Rank</th>
           </tr>
         </table>
-      </div>
-      <div id="projects">
-        <h1>PROJECTS</h1>
-      </div>
-      <div id="cv"></div>
+      </section>
+
+      <!-- <div class="verticalBorder"></div> -->
+      <br><br><br><br><br>
+      <section id="projects">
+        <h2 class="sectionHeader">PROJECTS</h2>
+        <div class="sectonMidBorder"></div>
+
+        <!-- job finder project -->
+        <div class="projectRow">
+          <div class="projectImage">
+            <div class="blurImage"></div>
+            <img src="./files/jobFinder.JPG" alt="" />
+          </div>
+          <div class="projectDetails">
+            <h2 class="projectTitle">Job Finder</h2>
+            <h2 class="projectType">Web Application</h2>
+            <div class="projectWorks">
+              <p>MERN stack application for find job and employees</p>
+              <p>
+                User can create a strong profile, add resume and short bio. User
+                can easily find job with preferences. By one click user can
+                apply for a job.
+              </p>
+              <p>
+                Recurite can post a new job and filter applicants base on skills
+                keywords.
+              </p>
+            </div>
+            <div class="projectTools">
+              <p>React</p>
+              <p>Express</p>
+              <p>Mongoose</p>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/BakiAdol/Job-Finder"
+                ><i class="icon-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- snake game project -->
+        <div class="projectRow">
+          <div class="projectImage">
+            <div class="blurImage"></div>
+            <img src="./files/snakeGame.png" alt="" />
+          </div>
+          <div class="projectDetails">
+            <h2 class="projectTitle">Snake Game</h2>
+            <h2 class="projectType">Console Application</h2>
+            <div class="projectWorks">
+              <p>OpenGL application for playing snake game</p>
+              <p>
+                It's a clasic snake game. The board has some red zone and snake
+                can't enter their. Snake could be controlled by four arrow key.
+              </p>
+              <p>
+                Snake eat food and increase score. Score will be shown in score
+                board.
+              </p>
+            </div>
+            <div class="projectTools">
+              <p>C++</p>
+              <p>OOP</p>
+              <p>OpenGL</p>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/BakiAdol/Snake-Game"
+                ><i class="icon-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- rainfall prediction project -->
+        <div class="projectRow">
+          <div class="projectImage">
+            <div class="blurImage"></div>
+            <img src="./files/rainfall.jpg" alt="" />
+          </div>
+          <div class="projectDetails">
+            <h2 class="projectTitle">Rainfall Prediction</h2>
+            <h2 class="projectType">Console Application</h2>
+            <div class="projectWorks">
+              <p>Machine Learning console applicaiton for predict rainfall</p>
+              <p>
+                Using some environment information like temparture, pressure,
+                dewpoint, humidity, cloud it's train machine and predict
+                rainfall or not using classificaton algorithms Support Vector
+                Machine (SVC), Naive Bayes Classifier and KNeighborsClassifier.
+              </p>
+            </div>
+            <div class="projectTools">
+              <p>SVC</p>
+              <p>Naive Bayes Classifier</p>
+              <p>KNeighborsClassifier</p>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/BakiAdol/Rainfall-Prediction"
+                ><i class="icon-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
     </main>
+
+    <footer>
+      <p>Abdullahil Baki Adol</p>
+      <p>joyaadol@gmail.com</p>
+      <p>Dhaka, Bangladesh</p>
+
+      <!-- contact section -->
+      <section class="contact">
+        <div class="contactlist">
+          <a href="https://github.com/bakiadol" ><i class="icon-github"></i ></a>
+          <a href="https://www.linkedin.com/in/adol/" > <i class="icon-linkedin"></i></a>
+          <a href="https://twitter.com/joyaadol" > <i class="icon-twitter"></i></a>
+        </div>
+      </section>
+
+    </footer>
 
     <script src="index.js"></script>
   </body>

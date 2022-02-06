@@ -7,95 +7,110 @@
 html {
   font-size: 62.5%;
 }
-
-:root {
-  --gray: #ececec;
-  --darkGray: rgb(77, 77, 77);
-  --white: #ffffff;
-  /* --primary: rgb(50, 133, 228); */
-  --primary: rgb(51, 51, 51);
+h2 {
+  padding: 0;
+  margin: 0;
 }
-
 a {
   text-decoration: none;
 }
-
-p {
-  padding: 0.5rem;
-}
-h1 {
-  color: var(--primary);
-  letter-spacing: 0.1rem;
+a:hover {
+  text-decoration: none;
 }
 
-header {
-  background-color: var(--primary);
-  text-align: center;
-  position: fixed;
+:root {
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+}
+body {
+  background-color: var(--navy);
+}
+/* header style*/
+.headerBody {
   width: 100%;
-}
-header h2 {
   position: fixed;
-  margin: 1rem 0 0 1rem;
+  display: flex;
+  padding: 2rem 0 2rem;
+  justify-content: space-between;
+  background-color: var(--dark-navy);
 }
-header h2 a {
+.headerRight {
+  margin-right: 8rem;
+}
+.headerRight a {
+  color: var(--lightest-slate);
   font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  color: var(--white);
-}
-header div {
-  padding: 1rem;
-}
-header div a {
-  font-size: 1.8rem;
-  color: white;
-  padding: 0.5rem;
-  letter-spacing: 0.1rem;
-}
-div#me p {
-  font-size: 1.8rem;
-  text-align: justify;
-}
-div#me h3 {
-  display: inline-block;
-  font-size: 1.5rem;
-  padding: 0.5rem 0.8rem;
-  color: var(--white);
-  margin: 0.5rem 0.5rem;
-  background-color: var(--darkGray);
+  margin-left: 3rem;
+  text-decoration: none;
 }
 
+/* blur image*/
+.blurImage {
+  background-color: var(--dark-navy);
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* body */
+.verticalBorder {
+  width: 80%;
+  border-bottom: 0.1rem solid var(--dark-slate);
+  margin: 0 auto 7rem auto;
+}
 main {
-  padding: 5rem 1rem;
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
 }
-main > div {
-  margin-top: 3rem;
+h2.sectionHeader {
+  font-size: 3rem;
+  color: var(--lightest-slate);
+  display: inline-block;
 }
-/* oj*/
-.ojCardBody {
+div.sectonMidBorder {
+  display: inline-block;
+  width: 20rem;
+  border-bottom: 0.1rem solid var(--dark-slate);
+}
+
+/* about me */
+div.aboutmerow {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
+  height: 40rem;
 }
-.ojCard {
-  width: 48%;
-  background-color: var(--gray);
-  margin: 1rem 0 1rem;
-  font-size: 1.8rem;
-  height: 160px;
+div.aboutmerow div.aboutmedetails {
+  width: 50%;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: var(--lightest-slate);
 }
-.ojCard p {
-  padding-left: 1rem;
+
+div.aboutmerow div.aboutmeimage img {
+  height: 100%;
+  border: 1rem solid var(--dark-navy);
 }
-.ojCard a {
-  color: var(--primary);
-  font-weight: 600;
+
+/* oj profile */
+div.ojprofileCard {
+  /* background-color: var(--dark-slate); */
+  color: var(--lightest-slate);
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 2rem 0 1rem;
 }
-.ojCard p:nth-child(1) {
-  background-color: var(--primary);
-  color: var(--white);
+
+div.ojprofileCard h2 {
+  font-size: 2rem;
 }
 
 /* standing */
@@ -103,49 +118,171 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  color: var(--darkGray);
+  color: var(--lightest-slate);
   font-size: 1.8rem;
-  margin: 1rem 0 1rem;
-  font-weight: 600;
+  margin-top: 4rem;
+  /* font-weight: 600; */
 }
 table a {
-  color: var(--primary);
+  /* color: var(--primary); */
   font-size: 1.7rem;
 }
 
 td,
 th {
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--dark-slate);
   text-align: center;
   padding: 0.8rem;
 }
 
-/*projects*/
-.projectCard {
-  background-color: var(--gray);
-  margin: 1rem 0 1.5rem;
-  padding-bottom: 0.5rem;
-  color: var(--darkGray);
+/* projects*/
+div.projectRow {
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--lightest-slate);
+  margin: 2rem 0 8rem;
+}
+div.projectRow div.projectImage {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  z-index: -5;
+}
+div.projectRow div.projectImage img {
+  width: 100%;
+  height: 100%;
 }
 
-.projectCard p:nth-child(1) {
-  font-size: 1.8rem;
-  font-weight: 500;
-  background-color: var(--primary);
-  color: var(--white);
+div.projectRow div.projectDetails {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.projectDetails h2.projectTitle {
+  text-align: right;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+div.projectDetails h2.projectType {
+  font-size: 1.3rem;
+  text-align: right;
 }
 
-.projectCard p:nth-child(2) {
+div.projectDetails div.projectWorks {
   font-size: 1.5rem;
-  font-weight: 600;
-}
-.projectCard p:nth-child(3) {
-  font-size: 1.7rem;
+  text-align: right;
+  color: var(--light-slate);
+  line-height: 2.1rem;
 }
 
-.projectCard a {
-  font-size: 1.7rem;
-  margin-left: 0.5rem;
-  color: var(--darkGray);
-  font-weight: 600;
+div.projectDetails div.projectTools {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.projectDetails div.projectTools p {
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+}
+
+div.projectDetails div.projectLinks a {
+  font-size: 2.5rem;
+  display: block;
+  text-align: right;
+  color: var(--lightest-slate);
+  text-decoration: none;
+}
+
+/* contact design */
+.contact {
+  position: fixed;
+  bottom: 0;
+  left: 3rem;
+}
+
+.contact div.contactlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact div.contactlist a {
+  font-size: 2.5rem;
+  color: var(--lightest-slate);
+  padding: 0.7rem;
+}
+
+footer {
+  background-color: var(--dark-navy);
+  color: var(--lightest-slate);
+  text-align: center;
+  padding: 3rem 0 3rem;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+/* home  */
+.home {
+  padding: 15rem 0 7rem;
+}
+.home p {
+  font-size: 1.8rem;
+  color: var(--dark-slate);
+}
+.home h2 {
+  font-size: 7rem;
+  line-height: 8rem;
+  color: var(--lightest-slate);
+}
+.home h3 {
+  font-size: 3rem;
+  color: var(--slate);
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    padding: 0;
+  }
+  /* contact  */
+  .contact {
+    position: relative;
+    left: 0;
+  }
+  .contact div.contactlist {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* projects  */
+  div.projectRow {
+    flex-direction: column;
+  }
+  div.projectRow div.projectImage {
+    width: 100%;
+  }
+
+  div.projectRow div.projectDetails {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  div.projectRow {
+    height: auto;
+  }
+
+  /* about me */
+  div.aboutmerow {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  div.aboutmerow div.aboutmedetails {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  div.aboutmerow div.aboutmeimage img {
+    width: 100%;
+  }
 }
