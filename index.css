@@ -34,6 +34,12 @@ body {
   background-color: var(--navy);
 }
 /* header style*/
+.headerLeft {
+  color: var(--light-slate);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-left: 8rem;
+}
 .headerBody {
   width: 100%;
   position: fixed;
@@ -84,6 +90,7 @@ div.sectonMidBorder {
 
 /* about me */
 div.aboutmerow {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: 40rem;
@@ -96,6 +103,7 @@ div.aboutmerow div.aboutmedetails {
 }
 
 div.aboutmerow div.aboutmeimage img {
+  width: 32rem;
   height: 100%;
   border: 1rem solid var(--dark-navy);
 }
@@ -284,5 +292,14 @@ footer {
 
   div.aboutmerow div.aboutmeimage img {
     width: 100%;
+  }
+  .headerLeft {
+    display: none;
+  }
+  .headerRight {
+    margin-right: 0.5rem;
+  }
+  .headerRight a {
+    margin-left: 1rem;
   }
 }
